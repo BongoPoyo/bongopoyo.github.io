@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', "Fira Code", monospace;
+  background-color: #1E1E2E; /* Catppuccin background */
+  color: #D9E0EE; /* Light gray text */
+}
+
+/* --- Top Bar --- */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181825; /* Surface color */
+  color: #D9E0EE;
+  padding: 12px 24px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* subtle shadow */
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #F5C2E7; /* Primary accent */
+}
+
+.nav-links a {
+  color: #D9E0EE;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #F28FAD; /* Hover accent */
+}
+
+.menu-btn {
+  display: none; /* optional for mobile */
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #D9E0EE;
+  cursor: pointer;
+}
+
+/* Push content below top bar */
+h1 {
+  margin-top: 80px;
+  text-align: center;
+}
+
+/* Optional: active nav-links toggle for mobile */
+.nav-links.active {
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #181825;
+  padding: 10px;
+  border-radius: 8px;
+}
