@@ -85,7 +85,7 @@ function handleCommand(cmd) {
 
   switch (cmd) {
     case "help":
-      for command in commands {
+      for (const command of commands) {
         term.writeln("\n", command);
       }
       break;
