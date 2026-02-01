@@ -1,12 +1,21 @@
+:root {
+    --background: #1e1e2e;   
+    --surface: #313244;      
+    --text: #cdd6f4;            
+    --accent: #f5c2e7;           
+    --accent-hover: #f8a1f1;    
+    --shadow: rgba(0, 0, 0, 0.5);
+}
+
 * {
-    text-color: #cdd6f4;
+    text-color: var(--text);
 }
 
 body {
     margin: 0;
     font-family: "Segoe UI", "Fira Code", monospace;
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 .top-bar {
@@ -14,7 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #181825;
-    color: #cdd6f4;
+    color: var(--text);
     padding: 12px 24px;
     position: fixed;
     top: 0;
@@ -30,6 +39,42 @@ body {
     font-size: 1.5rem;         
     cursor: pointer;
 }
+
+.floating-card {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    
+    margin: 30px auto; /* Changed from margin-top: 30px */
+    background-color: var(--surface);
+    border-radius: 16px;
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    color: var(--text);
+    box-shadow: 0 5px 15px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+.floating-card h2 {
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.floating-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+
+.floating-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px var(--shadow);
+    background-color: #3b3b5a;
+}
+
 
 
 .bottom-bar {
@@ -64,13 +109,14 @@ body {
     padding: 10px 14px;
     border-radius: 8px;
 
-    margin: 0 auto;        /* horizontal center */
+    margin: 0 auto;      
     text-align: center;
 }
 
 .copy-btn {
     top: 8px;
     right: 8px;
+    margin-left: 12px;
     background: #313244;
     color: #cdd6f4;
     border: none;
@@ -109,9 +155,10 @@ body {
 .socials a[href*="github"]:hover    { color: #cdd6f4; }
 .socials a[href*="itch"]:hover      { color: #fab387; }
 .socials a[href*="mastodon"]:hover  { color: #89b4fa; }
-.socials a[href*="bsky"]:hover      { color: #74c7ec; }
+.socials a[href*="bsky"]:hover      { color: #89dceb; }
 .socials a[href*="matrix"]:hover    { color: #a6e3a1; }
-.socials a[href^="mailto"]:hover    { color: #eba0ac; }
+.socials a[href*="mailto"]:hover    { color: #eba0ac; }
+.socials a[href*="discord"]:hover {color: #74c7ec;}
 
 .socials a:hover {
     color: #cdd6f4;
@@ -121,6 +168,11 @@ body {
 
 h1 {
     margin-top: 80px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
     text-align: center;
 }
 

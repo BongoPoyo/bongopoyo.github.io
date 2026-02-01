@@ -34,6 +34,7 @@ echo "│ bsky        │https://bsky.app/profile/bongopoyo.bsky.social      │
 echo "│ mastodon    │https://mastodon.social/@bongopoyo                  │ "
 echo "│ email       │bongopoyo@proton.me | hashir447079@gmail.com        │ "
 echo "│ matrix      │@bongopoyo:matrix.org                               │ "
+echo "│ discord     │https://discord.gg/cDxfzC28EZ                       │ "
 echo "└─────────────┴────────────────────────────────────────────────────┘ "
 
 echo -e "\033[0m"
