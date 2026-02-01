@@ -20,6 +20,21 @@ body {
     transition: background 0.3s;
 }
 
+.shell-script {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    align-items: center;
+    background-color: #181825;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.shell-script.active {
+    display: block;
+}
+
 .logo {
     font-size: 24px;
     font-weight: bold;
