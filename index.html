@@ -1,34 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bongo Poyo</title>
-        <link rel="stylesheet" href="index.css" />
-    </head>
-    <body>
-        <div class="top-bar">
-            <div class="logo">[Bongo Poyo]</div>
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="#">Contact</a>
-            </nav>
-            <button class="menu-btn">☰</button>
-        </div>
+<head>
+    <meta charset="utf-8" />
+    <title>Web CLI</title>
 
-        <h1>Welcome to My Website</h1>
-        <code class="shell-script">
-            curl https://bongopoyo.github.io/cli.sh | bash
-        </code>
+    <!-- xterm styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm/css/xterm.css">
 
-        <script src="index.js"></script>
-    </body>
+    <!-- your styles -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="terminal"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/xterm/lib/xterm.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
