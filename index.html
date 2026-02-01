@@ -1,34 +1,50 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bongo Poyo</title>
-        <link rel="stylesheet" href="index.css" />
-    </head>
-    <body>
-        <div class="top-bar">
-            <div class="logo">[Bongo Poyo]</div>
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="#">Contact</a>
-            </nav>
-            <button class="menu-btn">☰</button>
-        </div>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css" rel="stylesheet">
 
-        <h1>Welcome to My Website</h1>
-        <code class="shell-script">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bongo Poyo</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="top-bar">
+        <a href="/" class="logo">[Bongo Poyo]</a>
+        <button class="menu-btn">☰</button>
+    </div>
+
+    <h1>Welcome to My Website</h1>
+    <p>Try executing this in your terminal.</p>
+    <div class="shell-wrapper">
+        <code class="language-bash">
             curl https://bongopoyo.github.io/cli.sh | bash
         </code>
+    <button class="copy-btn">Copy</button>   </div>
 
-        <script src="index.js"></script>
-    </body>
+
+
+    <div class="bottom-bar">
+        <div class="socials">
+            <a href="https://www.youtube.com/@bongopoyo" aria-label="YouTube">Youtube</a>
+            <a href="https://bsky.app/profile/bongopoyo.bsky.social" aria-label="Bluesky"></i>BlueSky</a>
+            <a href="https://mastodon.social/@bongopoyo" aria-label="Mastodon">Mastodon</a>
+            <a href="https://matrix.to/#/@bongopoyo:matrix.org" aria-label="Matrix">Matrix</a>
+            <a href="https://bongopoyo.itch.io/  " aria-label="itch.io"></i>Itch</a>
+            <a href="https://github.com/bongopoyo" aria-label="GitHub"></i>GitHub</a>
+            <a href="mailto:bongopoyo@proton.me" aria-label="Email">Email</a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+
+</body>
+
 </html>
