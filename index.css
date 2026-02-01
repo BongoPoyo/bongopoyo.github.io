@@ -8,7 +8,7 @@
 }
 
 * {
-    text-color: var(--text);
+    color: var(--text);
 }
 
 body {
@@ -45,7 +45,7 @@ body {
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    
+    z-index: 1;
     margin: 30px auto; /* Changed from margin-top: 30px */
     background-color: var(--surface);
     border-radius: 16px;
